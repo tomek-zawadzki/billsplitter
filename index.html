@@ -8,5 +8,44 @@
     <script defer src="script.js" type="module"></script>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <header>
+        <h1 class="title">BILLSPLITTER</h1>
+        <p class="info">PODZIEL SIĘ RACHUNKIEM ZE ZNAJOMYMI :)</p>
+      </header>
+      <section class="box">
+        <form class="form">
+          <label class="form__label" for="value">
+            <input
+              class="form__label--value"
+              type="number"
+              name="value"
+              id="number"
+            />
+          </label>
+          <label class="form__label-people" for="people">
+            <input
+              class="form__people"
+              type="number"
+              name="people"
+              id="people"
+            />
+          </label>
+          <label class="form__label">
+            <select class="form__label--tip">
+              <option>- Wybierz napiwek -</option>
+              <option>5%</option>
+              <option>10%</option>
+              <option>15%</option>
+              <option>20%</option>
+            </select>
+          </label>
+          <button class="count">Oblicz</button>
+          <p class="summary">Powinniście się złozyć po <b>10 zł</b></p>
+          <p class="alert">Uzupełnij wszystkie pola!</p>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
