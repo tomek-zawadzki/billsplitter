@@ -7,6 +7,9 @@
     <title>Billspliter</title>
     <script defer src="script.js" type="module"></script>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+    </style>
   </head>
   <body>
     <main>
@@ -16,23 +19,26 @@
       </header>
       <section class="box">
         <form class="form">
-          <label class="form__label" for="value">
+          <div class="div__label">
+            <label class="form__label" for="value">Kwota do zapłaty</label>
             <input
               class="form__label--value"
               type="number"
               name="value"
               id="number"
             />
-          </label>
-          <label class="form__label-people" for="people">
+          </div>
+          <div class="div__label">
+            <label class="form__label-people" for="people">Ilość osób</label>
             <input
               class="form__people"
               type="number"
               name="people"
               id="people"
             />
-          </label>
-          <label class="form__label">
+          </div>
+          <div class="div__label">
+            <label class="form__label">Napiwek</label>
             <select class="form__label--tip">
               <option>- Wybierz napiwek -</option>
               <option>5%</option>
@@ -40,11 +46,11 @@
               <option>15%</option>
               <option>20%</option>
             </select>
-          </label>
-          <button class="count">Oblicz</button>
-          <p class="summary">Powinniście się złozyć po <b>10 zł</b></p>
-          <p class="alert">Uzupełnij wszystkie pola!</p>
+          </div>
         </form>
+        <button class="count">Oblicz</button>
+        <!-- <p class="summary">Powinniście się złozyć po <b>10 zł</b></p>
+        <p class="alert">Uzupełnij wszystkie pola!</p> -->
       </section>
     </main>
   </body>
