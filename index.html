@@ -22,16 +22,16 @@
           <div class="div__label">
             <label class="form__label" for="value">Kwota do zapłaty</label>
             <input
-              class="form__label--value"
+              class="form__label--price"
               type="number"
               name="value"
               id="number"
             />
           </div>
           <div class="div__label">
-            <label class="form__label-people" for="people">Ilość osób</label>
+            <label class="form__label" for="people">Ilość osób</label>
             <input
-              class="form__people"
+              class="form__label-people"
               type="number"
               name="people"
               id="people"
@@ -39,18 +39,20 @@
           </div>
           <div class="div__label">
             <label class="form__label">Napiwek</label>
-            <select class="form__label--tip">
-              <option>- Wybierz napiwek -</option>
-              <option>5%</option>
-              <option>10%</option>
-              <option>15%</option>
-              <option>20%</option>
+            <select class="form__label--tip" id="tip-per">
+              <option disabled selected>- Wybierz napiwek -</option>
+              <option value="0.05">5%</option>
+              <option value="0.1">10%</option>
+              <option value="0.15">15%</option>
+              <option value="0.2">20%</option>
             </select>
           </div>
         </form>
         <button class="count">Oblicz</button>
-        <!-- <p class="summary">Powinniście się złozyć po <b>10 zł</b></p>
-        <p class="alert">Uzupełnij wszystkie pola!</p> -->
+        <p class="summary hidden">
+          Powinniście się złozyć po <span class="result"></span> zł 😎
+        </p>
+        <p class="alert hidden">Uzupełnij wszystkie pola!</p>
       </section>
     </main>
   </body>

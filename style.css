@@ -54,6 +54,7 @@ header {
 .div__label {
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 6px;
 }
 
@@ -69,8 +70,35 @@ header {
   border-style: none;
   font-size: larger;
   margin: 20px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.count:hover {
+  color: rgb(147, 190, 61);
+  background-color: rgb(250 250 250);
+  border: 2px solid rgb(147, 190, 61);
+}
+
+.result {
+  font-weight: bold;
 }
 
 .alert {
   color: red;
+  margin-bottom: 24px;
+}
+
+.summary {
+  margin-bottom: 24px;
+}
+
+input,
+select {
+  width: 100%;
+}
+
+
+.hidden {
+  display: none;
 }
