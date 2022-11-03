@@ -10,7 +10,7 @@ countBtn.addEventListener("click", () => {
   let tipValuePer = price.value * tip.value;
   let calculation = (+price.value + tipValuePer) / people.value;
 
-  if (price.value === "" || people.value === "") {
+  if (price.value === "" || people.value === "" || tip.value === "- Wybierz napiwek -") {
     summary.classList.add("hidden");
     alertText.classList.remove("hidden");
   } else {
